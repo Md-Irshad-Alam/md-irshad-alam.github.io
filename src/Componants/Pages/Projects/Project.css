@@ -1,0 +1,35 @@
+.project-card{
+
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   padding: 10px;
+   margin-bottom: 10px;
+
+}
+.project-link{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+}
+.project-description{
+    /* margin-bottom: 110; */
+}
+.project-tech-stack{
+    margin-top: -0;
+}
+.project-link a{
+    list-style: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 1px solid silver;
+    padding: 5px;
+}
+.project-card img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

@@ -1,0 +1,11 @@
+.git_hub{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#github-streak-stats{
+    width: 326px;
+    height: 120px;
+    margin: auto;
+}

@@ -1,21 +1,28 @@
 
-.contact{
+#contact{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 15%;
+   margin-top: 30px;
+   margin-bottom: 30px;
 
 
     
 }
 
-.contact a{
+#contact-link{
+    display: flex;
+    gap: 15px;
+
+}
+
+#contact-link > a{
+    
     text-decoration: none;
-    color: black;
-     font-size: 1rem;
-   margin: 10px;
+    color: white;
+    font-weight: bolder;
+    
+
+
 }

@@ -1,4 +1,19 @@
 #home{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20%;
+
     
-    
+}
+.inner_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.home-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
