@@ -4,8 +4,59 @@
     flex-direction: column;
     gap: 15px;
 }
-#github-streak-stats{
-    width: 326px;
-    height: 120px;
-    margin: auto;
+
+.github_clalander{
+    margin-top: 4rem;
+    text-align: center;
 }
+#github-streak-stats{
+    height: 100%;
+   width: 100%;
+}
+
+#github-top-langs{
+     margin: auto;
+    display: flex;
+    text-align: center;
+}
+#github-stats-card{
+    height: 100%;
+    width: 99%;
+}
+.git_steak_start{
+    /* height: 100%;
+    width: 98%; */
+}
+.streat{
+    width: 46%;
+    border: 2px solid  wheat;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.first_two{
+   display: flex;
+   justify-content: space-around;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px; 
+}
+
+.lang{
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .section {
+      margin-top: 4em;
+    }
+    #github-top-langs{
+        height: 90%;
+        width: 90%;
+    }
+    .streat{
+        width: auto;
+    }
+  }
+  

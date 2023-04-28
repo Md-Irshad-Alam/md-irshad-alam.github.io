@@ -1,35 +1,42 @@
 
+import React from "react";
+import Aos from "aos";
 
-
-
-import Navbar from "./Componants/Navbar_page/Navbar";
 import About from "./Componants/Pages/About/About";
 import Contact from "./Componants/Pages/Contact/Contact";
 import Github from "./Componants/Pages/Github/Github";
 import Home from "./Componants/Pages/Home/Home";
+import { ThemeContext } from "./Componants/Context/Theme";
 import Projects from "./Componants/Pages/Projects/Projects";
-import Skills from "./Componants/Pages/Skills/Skills";
-
+import { Footer } from "./Componants/Pages/Footar/Footer";
+import "./App.css";
+import { ScrollToTop } from "./Componants/ScrollToTop/ScrollToTop";
 function App() {
+  const [{ themename }] = React.useContext(ThemeContext);
+  React.useEffect(() => {
+   Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className="App">
-     <section>
-      <Navbar/>
-     </section>
-     <main>
-      <Home/>
-      <About/>
-     <Skills/>
-     <section>
-      <Projects/>
-     </section>
-     <section>
-      <Github/>
-     </section>
-     <section>
-      <Contact/>
-     </section>
-     </main>
+    <div id="top" className={`${themename} app`}>
+      <section id="#home">
+        <Home />
+      </section>
+      <main>
+        <About />
+        <section id="#projects">
+          <Projects />
+        </section>
+        <section id="#github">
+        <Github />
+        </section>
+        <section id="#contact">
+          
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

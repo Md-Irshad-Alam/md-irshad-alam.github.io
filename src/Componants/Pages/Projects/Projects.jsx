@@ -1,28 +1,230 @@
 import React from 'react'
-import projectdata from './Projectdata';
 import style from './Project.css'
+import { FaReact} from "react-icons/fa";
+import { IoServer } from "react-icons/io5";
+import {
+  SiHtml5,
+  SiCss3,
+  SiHeroku,
+  SiChakraui,
+  SiExpress,
+  SiMongodb,
+  SiNodedotjs,
+  SiJavascript,
+  SiTailwindcss
+} from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
+import { VscJson } from "react-icons/vsc";
+import { IoLogoJavascript } from "react-icons/io";
+import { BsBootstrap } from "react-icons/bs";
+
 function Projects() {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      {
-        projectdata.map((ele)=>{
-          return(
-            <div className="project-card">
-                <h3 className="project-title">{ele.title}</h3>
-                <img src={ele.image} alt="Project" />
-                <p className="project-description">{ele.Description}</p>
-                  <h3>Tech Stack</h3>
-                <p className="project-tech-stack">{ele.tech_stack}</p>
-                <div className="project-link">
-                <a href={ele.GIthub_link} target="_blank" rel="noreferrer" className="project-github-link">GitHub repository</a>
-                <a href={ele.devployed_link} target="_blank" rel="noreferrer" className="project-deployed-link">Deployed link</a>
-                </div>
+    <>
+    <div className="section" id="projects">
+      <h2 className="section__title different" data-aos="fade-right">
+        Projects
+      </h2>
+      <div className="project-card">
+        <div className="project">
+          <div className="project_videocontainer">
+            <div data-aos="fade-right">
+              <img
+                src="./disc.png"
+                alt="DiscoveryPlus"
+              />
+            </div>
           </div>
-          )
-        })
-      }
-    </section>
+          <div className="project-title" data-aos="fade-right">
+            <h2>Discovery Plus</h2>
+            <p className='project-description'>
+            Discovery+ is an American streaming service owned by Warner Bros,
+            Designed all the features & functionalities for the front end Bachk End  of the website to enhance the user experience. 
+           
+            </p>
+            <div className='project-tech-stack'>
+              <FaReact />
+              <SiCss3/>
+              <SiExpress/>
+              <SiMongodb/>
+              <SiChakraui/>
+              <SiTailwindcss/>
+            </div>
+            <div>
+              <a
+                href="https://discovery-plus-clone1.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className='project-deployed-link'
+              >
+                <span type="button" className="btn btn--outline onbt">
+                  See this Live
+                </span>
+              </a>
+              <a
+                href="https://github.com/Md-Irshad-Alam/DiscoveryPlus-Clone1"
+                target="_blank"
+                rel="noreferrer"
+                className='project-github-link'
+              >
+                <span type="button" className="btn btn--outline">
+                  View Code
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <div className="project">
+          <div className="project_videocontainer">
+            <div data-aos="fade-right">
+              <img
+                src="./alibaba.png"
+                alt="Alibaba"
+              />
+            </div>
+          </div>
+          
+          <div className="project-title" data-aos="fade-right">
+            <h2>Alibaba Clone</h2>
+            <p className='project-description'>
+             Alibaba Group Holding Limited, also known as Alibaba, is a Chinese multinational technology company specializing
+              in e-commerce, retail,
+              In this project you can search product , short product , add to cart, checkout and many more. You can do in this project
+            </p>
+            <div className='project-tech-stack'>
+              <SiJavascript />
+              <SiHtml5 />
+              <BsBootstrap/>
+              <DiCss3/>
+            </div>
+            <div>
+              <a
+                href="https://alibaba-clone.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className='project-deployed-link'
+              >
+                <span type="button" className="btn btn--outline onbt">
+                  See this Live
+                </span>
+              </a>
+              <a
+                href="https://github.com/Md-Irshad-Alam/Alibaba_Clone"
+                target="_blank"
+                rel="noreferrer"
+                className='project-github-link'
+
+              >
+                <span type="button" className="btn btn--outline">
+                  View Code
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+{/* project -pharmeasy */}
+      <div className="project-card">
+        <div className="project">
+          <div className="project_videocontainer">
+            <div data-aos="fade-right">
+              <img
+                src="./pharmEasy.png"
+                alt="pharmeasy"
+              />
+            </div>
+          </div>
+          <div className="project-title" data-aos="fade-right">
+            <h2>Amazon Clone</h2>
+            <p className='project-description'>
+            PharmEasy is an Indian e-pharmacy company that sells medicines, diagnostics and telehealth .
+            In this project you can Login , register, Add to card product , Buy product, Filter the product buy price or location etc.... 
+            </p>
+            <div className='project-tech-stack'>
+              <IoLogoJavascript />
+              <SiHtml5 />
+              <SiCss3 />
+              <IoServer />
+              <SiHeroku />
+            </div>
+            <div>
+              <a
+                href="https://bespoke-jalebi-440ea8.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className='project-deployed-link'
+              >
+                <span type="button" className="btn btn--outline onbt">
+                  See this Live
+                </span>
+              </a>
+              <a
+                href="https://github.com/Md-Irshad-Alam/pharmEasy_clone"
+                target="_blank"
+                rel="noreferrer"
+                className='project-github-link'
+              >
+                <span type="button" className="btn btn--outline">
+                  View Code
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+{/* Youtube */}
+      <div className="project-card">
+        <div className="project">
+          <div className="project_videocontainer">
+            <div data-aos="fade-right">
+              <img
+                src="./Youtube.png"
+                alt="ESPN"
+              />
+            </div>
+          </div>
+          <div className="project-title" data-aos="fade-right">
+            <h2>YouTube</h2>
+            <p className='project-description'>
+            YouTube is a global online video sharing and social media platform , In this project you can watch the the real video , 
+            search video, short the video by length and  Popular video on Youtube etc...
+  
+            </p>
+            <div className='project-tech-stack'>
+              <SiHtml5 />
+              <SiCss3 />
+              <IoLogoJavascript />
+            </div>
+            <div>
+              <a
+                href="https://bespoke-jalebi-440ea8.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+                 className='project-deployed-link'
+              >
+                <span type="button" className="btn btn--outline onbt">
+                  See this Live
+                </span>
+              </a>
+              <a
+                href="https://github.com/Md-Irshad-Alam/YouTube_Clone"
+                target="_blank"
+                rel="noreferrer"
+                 className='project-github-link'
+              >
+                <span type="button" className="btn btn--outline">
+                  View Code
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
   );
 }
 

@@ -1,19 +1,14 @@
-#home{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20%;
-
-    
-}
-.inner_home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.home-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+.header {
+    height: 8em;
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      height: 6em;
+    }
+  }
+  

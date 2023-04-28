@@ -5,11 +5,10 @@
     align-items: center;
     justify-content: center;
    margin-top: 30px;
-   margin-bottom: 30px;
-
-
-    
+   margin-bottom: 30px; 
+   
 }
+
 
 #contact-link{
     display: flex;
@@ -22,7 +21,21 @@
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    
 
-
+}
+.hide_parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.hide_parent :hover ~ .hide{
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.hide{
+    visibility: hidden;
 }
