@@ -29,11 +29,12 @@ function App() {
         </section>
         <section id="#github">
         <Github />
+        <br/>
+        <Contact />
         </section>
-        <section id="#contact">
-          
-          <Contact />
-        </section>
+        {/* <section id="#contact">
+         
+        </section> */}
       </main>
       <Footer />
       <ScrollToTop />

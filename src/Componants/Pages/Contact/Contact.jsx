@@ -11,17 +11,23 @@ function Contact() {
   return (
     <div id='contact'>
        <div className="about__contact center">
-        <a
-          href="https://github.com/MyHobbies0"
-          aria-label="github"
-          target="_blank"
-          rel="noreferrer"
-          className="link link--icon"
-          id="contact-github"
-        >
-          <GitHubIcon />
+        <div className='first-two-part'>
+            <a
+              href="https://github.com/MyHobbies0"
+              aria-label="github"
+              target="_blank"
+              rel="noreferrer"
+              className="link link--icon"
+              id="contact-github"
+            >
+              <div className="hide_parent">
+              <GitHubIcon />
+                Irshad-alam
+              </div>
           
-        </a>
+             </a>
+        </div>
+        <div className='first-two-part'>
         <a
           href="mailto:almairsh0205@gmail.com"
           target="_blank"
@@ -33,32 +39,42 @@ function Contact() {
         >
          <div className="hide_parent">
           <EmailIcon />
-            <div className="hide">almairsh0205@gmil.com</div>
+            almairsh0205@gmil.com
          </div>
         </a>
-        <a
-          href="tel:+917079355936"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="github"
-          className="link link--icon"
-          id="contact-phone"
-        >
-         <div className="hide_parent">
-          <PhoneIcon />
-            <div className="hide">+91-7079355936</div>
-          </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/md-irshad-alam-761b491b9"
-          aria-label="github"
-          className="link link--icon"
-          target="_blank"
-          rel="noreferrer"
-          id="contact-linkedin"
-        >
-          <LinkedInIcon />
-        </a>
+        </div>
+
+        <div className='second-two-part'>
+          <a
+            href="tel:+917079355936"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="github"
+            className="link link--icon"
+            id="contact-phone"
+          >
+          <div className="hide_parent">
+            <PhoneIcon />
+            +91-7079355936
+            </div>
+          </a>
+        </div>
+
+        <div className='second-two-part'>
+            <a
+              href="https://www.linkedin.com/in/md-irshad-alam-761b491b9"
+              aria-label="github"
+              className="link link--icon"
+              target="_blank"
+              rel="noreferrer"
+              id="contact-linkedin"
+            >
+            <div className="hide_parent">
+            <LinkedInIcon />
+              md-irshad-alam
+            </div>
+            </a>
+        </div>
       </div>
     </div>
   )

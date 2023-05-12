@@ -10,15 +10,10 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
   }
   .resume_section{
     display: flex;
-    float: left;
-    justify-content: flex-start;
-    gap: 3rem;
-    padding: 10px;
-   
-    width: 72%;
     margin-top: 1rem;
   }
   .about > :nth-child(2) {
@@ -49,7 +44,7 @@
   @media (max-width: 600px) {
     .app .about {
       align-items: flex-start;
-      margin-top: 2em;
+      margin-top: 1em;
       justify-content: center;
       align-items: center;
     }

@@ -5,8 +5,9 @@ import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from "@mui/icons-material/Close";
 import sytle from './Navbar.css'
-import { saveAs } from 'file-saver';
 
+
+import { saveAs } from 'file-saver';
 function Navbar() {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
@@ -18,19 +19,23 @@ function Navbar() {
     setShowNavList(!showNavList);
   };
 
-  const downloadFile = () => {
-    window.open("https://drive.google.com/file/d/1hGJuXGIR5Y2q667O77Tdqh2VD9OwDc7U/view?usp=sharing", "_blank")
-    const filename = 'Irshad_resume.pdf'; // the name of the file you want to download
-    const file = 'Irshad_resume.pdf'; // the path to the file you want to download
-    fetch(file)
-      .then((response) => response.blob())
-      .then((blob) => {
-        saveAs(blob, filename);
-      })
-      .catch((error) => console.error(error));
-  };
+ 
 
-
+  const downloadFile = () =>{
+    window.open(
+      "https://onedrive.live.com/?authkey=%21AHsXK%5FwgBDjmcD8&cid=3F96436F355E0D18&id=3F96436F355E0D18%21382&parId=root&o=OneUp"
+    );
+    const url =
+    "https://onedrive.live.com/download?cid=3F96436F355E0D18&resid=3F96436F355E0D18%21382&authkey=AJ81nci8_ZvqD4o&em=2";
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Irshad-resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
+  
+  
 
   return (
     <nav id="nav-menu" className="center nav">
@@ -86,17 +91,16 @@ function Navbar() {
             </a>
           </li>
           <li className="nav__list-item">
-            {/* <a
-              href="https://drive.google.com/file/d/1oHkZz18nsRmy-WPqfIoHeFSYcx4X52WF/view?usp=share_link"
-              onClick={toggleNavList}
+            <a
+
               className="nav-link resume"
               target="_blank"
               rel="noreferrer"
+              id="resume-button-1"
+              onClick={downloadFile}
             >
-              Resume
-            </a> */}
-            <button onClick={downloadFile} className="nav-link resume" id="resume-button-2">resune</button>
-          
+             Resume
+            </a>
           </li>
         </ul>
         <button

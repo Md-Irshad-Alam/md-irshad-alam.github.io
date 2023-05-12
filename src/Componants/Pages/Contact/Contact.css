@@ -15,6 +15,10 @@
     gap: 15px;
 
 }
+.about__contact{
+    display: flex;
+    
+}
 
 #contact-link > a{
     

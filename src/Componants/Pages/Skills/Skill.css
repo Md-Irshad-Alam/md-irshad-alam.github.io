@@ -10,19 +10,20 @@
  }
  
  .techsection > div {
-   width: 11%;
-   height: 16vh;
-   max-height: 140px;
-   box-shadow: var(--shadow);
-   z-index: 1;
-   border-radius: 20px;
-   margin: 2.5%;
-   float: left;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   transition: all 0.5s ease 0s;
+  width: 9%;
+  height: 10vh;
+  max-height: 140px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 20px;
+  margin: 2.5%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease 0s;
  }
  .techsection > div:hover {
    background-color: var(--clr-bg);
@@ -53,11 +54,11 @@
     justify-items: center;
     height: 72vh;
    }
-   /* .techsection > div {
+   .techsection > div {
      width: 40%;
      margin-right: 5%;
      margin-bottom: 2%;
      height: 18vh;
-   } */
+   }
  }
  

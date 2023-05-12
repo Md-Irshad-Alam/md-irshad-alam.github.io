@@ -11,7 +11,12 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiJavascript,
-  SiTailwindcss
+  SiTailwindcss,
+  SiBootstrap,
+  SiReact,
+  SiVercel,
+  SiGithub,
+  SiSocketdotio
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
@@ -36,7 +41,8 @@ function Projects() {
             </div>
           </div>
           <div className="project-title" data-aos="fade-right">
-            <h2>Discovery Plus</h2>
+            <h2>Discovery Plus  <span className="different-define"> [Mern Stack]</span></h2>
+    
             <p className='project-description'>
             Discovery+ is an American streaming service owned by Warner Bros,
             Designed all the features & functionalities for the front end Bachk End  of the website to enhance the user experience. 
@@ -75,7 +81,61 @@ function Projects() {
           </div>
         </div>
       </div>
-
+       {/* chat applications  */}
+       <div className="project-card">
+        <div className="project">
+          <div className="project_videocontainer">
+            <div data-aos="fade-right">
+              <img
+                src="./chat-app.png"
+                alt="chat app"
+              />
+            </div>
+          </div>
+          <div className="project-title" data-aos="fade-right">
+            <h2>Chat Application <span className="different-define"> [Mern Stack]</span></h2>
+            {/*  */}
+            <p className='project-description'>
+              this application can connect multiple users at the same time and they can also chat with each other and their
+                 chat will  saved for next time. a user can see previous chat aswell 
+              this project is not fully completed yet, I am still working...  
+            </p>
+            <div className='project-tech-stack'>
+              <SiReact />
+              <SiSocketdotio/>
+              <SiExpress />
+              <SiMongodb />
+              <SiTailwindcss />
+              <SiBootstrap />
+              <SiVercel />
+              <SiGithub />
+            </div>
+            <div>
+              <a
+                href="https://real-time-chat-8dnu.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className='project-deployed-link'
+              >
+                <span type="button" className="btn btn--outline onbt">
+                  See this Live
+                </span>
+              </a>
+              <a
+                href="https://github.com/MyHobbies0/Real_time_chat/tree/main/clint"
+                target="_blank"
+                rel="noreferrer"
+                className='project-github-link'
+              >
+                <span type="button" className="btn btn--outline">
+                  View Code
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+{/* Alibaba cone  */}
       <div className="project-card">
         <div className="project">
           <div className="project_videocontainer">
@@ -126,6 +186,7 @@ function Projects() {
           </div>
         </div>
       </div>
+     
 {/* project -pharmeasy */}
       <div className="project-card">
         <div className="project">
@@ -138,7 +199,7 @@ function Projects() {
             </div>
           </div>
           <div className="project-title" data-aos="fade-right">
-            <h2>Amazon Clone</h2>
+            <h2>pharmEasy Clone</h2>
             <p className='project-description'>
             PharmEasy is an Indian e-pharmacy company that sells medicines, diagnostics and telehealth .
             In this project you can Login , register, Add to card product , Buy product, Filter the product buy price or location etc.... 
@@ -176,7 +237,7 @@ function Projects() {
         </div>
       </div>
 {/* Youtube */}
-      <div className="project-card">
+      {/* <div className="project-card">
         <div className="project">
           <div className="project_videocontainer">
             <div data-aos="fade-right">
@@ -222,7 +283,7 @@ function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </>
   );

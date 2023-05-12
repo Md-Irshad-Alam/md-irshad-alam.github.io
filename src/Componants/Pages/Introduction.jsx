@@ -9,9 +9,9 @@ export const Introduction = () => {
 
   return (
     <>
-      <section id="#about">
+      <section id="about">
         <div className="section" data-aos="fade-right">
-          
+        
           <div className={"introduction " + themename}>
             <div className="introduction_logocontainer">
             <div class="image-container">
@@ -21,13 +21,14 @@ export const Introduction = () => {
               </div>
             </div>
             </div>
+
             <div className="introduction_datacontainer">
-              <h4 >
+              <h4  id="user-detail-intro" >
                 Hi Everyone, I am{" "}
                 <span className="different">Irshad Alam </span> from{" "}
                 from Jharkhand, I have completed my bachelor's degree in physics, in 2022. Apart from this, I have 
-              Strong problem-solving skills and ability to learn new technologies quickly. Seeking an opportunity to work 
-          in a dynamic and collaborative team where I can leverage my skills and gain further experience in full-stack web development
+              Strong problem-solving skills and ability to learn new technologies like JavaScript, React Js, Node Js, Redux and MongoDB etc. quickly. Seeking an opportunity to work 
+            in a dynamic and collaborative team where I can leverage my skills and gain further experience in full-stack web development
 
               </h4>
               <h4>

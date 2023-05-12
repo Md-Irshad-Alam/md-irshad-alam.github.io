@@ -32,9 +32,9 @@
   
   .project_videocontainer > div {
     width: 90%;
-    height: 90%;
-    border: 10px solid var(--clr-primary);
-    border-radius: 30px;
+    height: 75%;
+    border: 1px solid var(--clr-primary);
+    border-radius: 17px;
   }
   .project_videocontainer > div > img {
     width: 100%;
@@ -55,16 +55,25 @@
   .project-title > h2 {
     margin-top: 1em;
     color: var(--clr-primary);
+    text-align: center;
   }
   .project-title > p {
     margin-top: 1em;
     text-align: center;
   }
   .project-title > div:nth-child(3) {
+    font-size: 0.7rem;
     margin-top: 0.5em;
-    display: flex;
-    justify-content: space-evenly;
-  }
+    width: 100%;
+    display: grid;
+   
+    padding: 0 10px 0 10px;
+    place-content: center;
+   
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+  
   
   .project-title > div:nth-child(3) > svg {
     font-size: 3em;
@@ -73,7 +82,7 @@
     transition: all 0.2s ease-in-out;
   }
   .section{
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
   }
   
   .project-title > div:nth-child(3) > svg:hover {
@@ -83,6 +92,7 @@
   .project-title > div:nth-child(4) {
     margin-top: 0.6em;
     display: flex;
+    margin-top: 19px
   }
   .onbt {
     margin: 0 1vw 0 1vw;
@@ -98,7 +108,10 @@
   @media (max-width: 600px) {
     .project {
       flex-direction: column;
-      /* height: 100vh; */
+      height: 100vh;
+    }
+    #projects{
+      margin-top: 2vh;
     }
     .project_videocontainer {
       flex-basis: 40%;
