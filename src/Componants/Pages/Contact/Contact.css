@@ -1,23 +1,34 @@
 
 #contact{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   margin-top: 30px;
-   margin-bottom: 30px; 
-   
+    width: 58vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 23px;
+    border: 1px solid darkgray;
+   padding: 5px;
+   height: 15vh;
 }
 
 
 #contact-link{
-    display: flex;
-    gap: 15px;
+    /* display: flex;
+    gap: 15px; */
 
 }
-.about__contact{
+.first-two-part {
+    width: fit-content;
     display: flex;
+    justify-content: center;
+    padding: 0 5px 0 10px;
+    align-items: center;
     
+}
+
+.about__contact {
+  
 }
 
 #contact-link > a{
@@ -28,10 +39,11 @@
 
 }
 .hide_parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 12px;
+    
 }
 .hide_parent :hover ~ .hide{
     visibility: visible;
@@ -43,3 +55,15 @@
 .hide{
     visibility: hidden;
 }
+
+@media (max-width: 600px) {
+    #contact{
+        display: flex;
+        width: -moz-fit-content;
+        flex-direction: column-reverse;
+        align-content: space-between;
+        align-items: stretch;
+        width: 96vw;
+    }
+    
+  }

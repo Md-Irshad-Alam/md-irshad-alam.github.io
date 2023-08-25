@@ -18,7 +18,7 @@ function GithubStart() {
         </div>
     <div className='lang'>
         {/* <h3 className='hide_name'>GitHub Top Languages</h3> */} 
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MyHobbies0&size_weight=0.5&count_weight=2.5)](https://github.com/MyHobbies0/github-readme-stats)" alt="GitHub Top Languages" />
+        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MyHobbies0&theme=radical&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="GitHub Top Languages" />
     </div>
     </div>
   )

@@ -3,14 +3,14 @@
     margin: 0 auto;
   }
   #projects{
-    margin-top: 8em;
    
+    margin-top: 3em;
 
   }
   .project {
     width: 100%;
     /* height: 70vh; */
-    margin: 6% 0% 6% 0%;
+    /* margin: 1% 0% 4% 0%; */
     box-shadow: var(--shadow);
     display: flex;
     border-radius: 30px;
@@ -110,9 +110,9 @@
       flex-direction: column;
       height: 100vh;
     }
-    #projects{
-      margin-top: 2vh;
-    }
+    /* #projects{
+      margin-top: 14em;
+    } */
     .project_videocontainer {
       flex-basis: 40%;
     }

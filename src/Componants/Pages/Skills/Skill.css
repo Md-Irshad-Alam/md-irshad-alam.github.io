@@ -2,20 +2,33 @@
    margin-top: 4em;
  }
  .techsection {
-   width: 100%;
-   text-align: center;
-   background-color: var(--clr-bg);
-   height: 66vh;
-   max-height: 70vh;
+  background-color: var(--clr-bg);
+    /* height: 48vh; */
+    /* max-height: 69vh; */
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    transition: all .5s ease 0s;
  }
+ .techsection:hover{
+    transform: scale(1.04);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ }
+ .skills-card {
+  width: fit-content;
+  height: 10vh;
+}
  
  .techsection > div {
-  width: 9%;
-  height: 10vh;
-  max-height: 140px;
-  box-shadow: var(--shadow);
+  /* width: 9%;
+  height: 10vh; */
+  /* max-height: 140px; */
+  /* box-shadow: var(--shadow); */
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 2.5%;
   float: left;
   display: flex;
@@ -27,7 +40,7 @@
  }
  .techsection > div:hover {
    background-color: var(--clr-bg);
-   overflow: hidden;
+   /* overflow: hidden; */
    transform: scale(1.2);
    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -38,7 +51,10 @@
  .techsection > div > svg {
    /* height: 50%;
    width: 50%; */
-   font-size: 8vh;
+   font-size:100%;
+   height: 39px;
+   width: 100%;
+   
    color: var(--clr-primary);
  }
  .techsection > div > h5 {
@@ -52,13 +68,14 @@
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     justify-items: center;
-    height: 72vh;
+    /* height: 60vh; */
+    grid-row-gap: 32px;
    }
    .techsection > div {
-     width: 40%;
-     margin-right: 5%;
-     margin-bottom: 2%;
-     height: 18vh;
+    width: fit-content;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    height: 11vh;
    }
  }
  

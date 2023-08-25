@@ -8,7 +8,8 @@ import {
   SiExpress,
   SiNpm,
   SiNetlify,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSocketdotio
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { DiCss3, DiMongodb } from "react-icons/di";
@@ -55,6 +56,10 @@ function Skills() {
         <div className='skills-card'>
           <SiRedux className='skills-card-img'/>
           <h5 className='skills-card-name'>Redux</h5>
+        </div>
+        <div className='skills-card'>
+          <SiSocketdotio className='skills-card-img'/>
+          <h5 className='skills-card-name'>Socket.io</h5>
         </div>
         <div className='skills-card'>
           <DiMongodb className='skills-card-img'/>

@@ -83,7 +83,8 @@ export const Timeline = () => {
               className="vertical-timeline-element-title"
               data-aos="fade-right"
             >
-              Bachelor of Physics
+             Completed bachelor's degree - Physics
+             
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
@@ -91,13 +92,14 @@ export const Timeline = () => {
             >
             </h4>
             <p data-aos="fade-right">
-            SKMU Uviversity, Dumka - Jharkhand
+            SKMU Uviversity, 
+             Dumka - Jharkhand
             </p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"2016 - 2019"}
+            date={" August-2017 - August -2019"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               backgroundColor: `var(--clr-bg)`,
@@ -115,7 +117,7 @@ export const Timeline = () => {
               className="vertical-timeline-element-title"
               data-aos="fade-right"
             >
-              Completed Higher Secondary - Science
+              Completed Higher Secondary - Science with PCM
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
@@ -123,7 +125,8 @@ export const Timeline = () => {
             >
             </h4>
             <p data-aos="fade-right">
-              Millat College Parsha, Jharkhand
+              Millat College Parsha, 
+              Jharkhand
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

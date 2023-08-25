@@ -10,7 +10,8 @@ import PublicIcon from "@mui/icons-material/Public";
 function Contact() {
   return (
     <div id='contact'>
-       <div className="about__contact center">
+       
+
         <div className='first-two-part'>
             <a
               href="https://github.com/MyHobbies0"
@@ -27,6 +28,7 @@ function Contact() {
           
              </a>
         </div>
+
         <div className='first-two-part'>
         <a
           href="mailto:almairsh0205@gmail.com"
@@ -44,14 +46,14 @@ function Contact() {
         </a>
         </div>
 
-        <div className='second-two-part'>
+        <div className='first-two-part'>
           <a
             href="tel:+917079355936"
             target="_blank"
             rel="noreferrer"
-            aria-label="github"
             className="link link--icon"
             id="contact-phone"
+            aria-label="github"
           >
           <div className="hide_parent">
             <PhoneIcon />
@@ -60,23 +62,24 @@ function Contact() {
           </a>
         </div>
 
-        <div className='second-two-part'>
+        <div className='first-two-part'>
             <a
               href="https://www.linkedin.com/in/md-irshad-alam-761b491b9"
               aria-label="github"
-              className="link link--icon"
               target="_blank"
               rel="noreferrer"
               id="contact-linkedin"
+              className="link link--icon"
             >
-            <div className="hide_parent">
-            <LinkedInIcon />
-              md-irshad-alam
-            </div>
+              <div className="hide_parent">
+              <LinkedInIcon />
+                md-irshad-alam
+              </div>
             </a>
         </div>
+        
       </div>
-    </div>
+    
   )
 }
 

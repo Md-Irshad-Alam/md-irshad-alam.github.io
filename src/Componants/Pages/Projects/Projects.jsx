@@ -87,7 +87,7 @@ function Projects() {
           <div className="project_videocontainer">
             <div data-aos="fade-right">
               <img
-                src="./chat-app.png"
+                src="./chat.jpg"
                 alt="chat app"
               />
             </div>
